@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-toggleable-sm navbar-expand-lg navbar-light bg-primary">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">KELOKER</a>
+			  
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+				  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+					  <a class="nav-link" href="lobar.html">Lowongan Baru</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="isiloker.html">Isi loker</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="daftarmitra.html">Daftar Mitra</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Berita</a>
+					  </li>
+				  </ul>
+				  <form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				  </form>
+				</div>
+			  </nav>
+				  
+				</div>
+			  </nav>
+		</div>
+	</div>
+	<div class="row">
+		
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12" style="margin: 100px;">
+                                <div id="kerangka">
+                                    <!-- Header Form -->
+                                    <div id="card-content">
+                                          <div id="kerangka-title">
+                                            <h1>LOGIN</h1>
+                                            <div class="underline-title"></div>
+                                          </div>
+                                    </div>
+                                    <!-- Form Login -->
+                                    <form method="request">	
+                                        <input type="text" id="username" name="username" class="form_login" placeholder="Username or Email ">
+                                        <input type="password" id="password" name="password" class="form_login" placeholder="Password ">
+                         
+                                        <input type="submit" class="tombol_login" onClick="return validasi()" value="LOGIN">
+                                    </form>
+                                    
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		 
+		<address>
+			 <strong>DIBUAT OLEH</strong><br>Kelompok <a href="profile.html">KELOKER</a> @2021
+		</address>
+	</div>
+</div>
+<script>
+    //Javascript Doucment
+function validasi() {
+	var user = document.getElementById("username").value;
+	var pass = document.getElementById("password").value;
+	if (user == "" && pass == "") {
+		alert('Username / Password Tidak Boleh Kosong');
+		return false;
+	}
+	else if (user == "admin" && pass == "admin"){
+		alert('Anda Berhasil Login');
+		window.location = "home.html";
+		return false;
+	}else{
+		alert("Username / Password Anda Salah, Coba Lagi");
+	}
+		
+}
+</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
